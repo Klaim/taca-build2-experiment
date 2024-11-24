@@ -1,4 +1,4 @@
-cxx.std = latest
+cxx.std = 26
 
 using cxx
 

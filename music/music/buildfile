@@ -45,6 +45,7 @@ file{music.taca}: exe{music.wasm}
 	touch $target.path($>)
 }}
 
+file{music.taca}: test = true
 
 
 cxx.poptions =+ "-I$out_root" "-I$src_root" "-I$out_base"

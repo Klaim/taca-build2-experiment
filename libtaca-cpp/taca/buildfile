@@ -1,7 +1,7 @@
 intf_libs = # Interface dependencies.
 #import xxxx_libs += libhello%lib{hello}
 
-lib{taca}: {hxx ixx txx}{** -version} hxx{version} $intf_libs
+lib{taca}: {hxx ixx txx c h}{** -version} hxx{version} $intf_libs
 
 hxx{version}: in{version} $src_root/manifest
 

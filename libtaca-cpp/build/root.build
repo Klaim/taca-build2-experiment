@@ -2,9 +2,10 @@
 #
 #cxx.internal.scope = current
 
-cxx.std = 23
+cxx.std = 26
 
 using cxx
+using c
 
 hxx{*}: extension = hpp
 ixx{*}: extension = ipp
