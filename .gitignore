@@ -9,5 +9,5 @@
 compile_commands.json
 
 /builds/
-
+/install/
 *.wasm
