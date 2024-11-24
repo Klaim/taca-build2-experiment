@@ -19,7 +19,7 @@ Requirements:
 
 For example:
 
-```
+```bash
 git clone .../taca-build2-experiments.git
 cd taca-build2-experiments
 
