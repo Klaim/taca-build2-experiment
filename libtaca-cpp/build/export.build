@@ -1,6 +1,6 @@
 $out_root/
 {
-  include libtaca-cpp/
+  include taca/
 }
 
-export $out_root/libtaca-cpp/$import.target
+export $out_root/taca/$import.target

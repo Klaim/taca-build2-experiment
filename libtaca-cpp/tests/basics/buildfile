@@ -1,3 +1,3 @@
-import libs = libtaca-cpp%lib{taca-cpp}
+import libs = libtaca-cpp%lib{taca}
 
 exe{driver.taca}: {hxx ixx txx cxx}{**} $libs testscript{**}

@@ -1,6 +1,48 @@
 libs =
-#import libs += libhello%lib{hello}
+import libs += libtaca-cpp%lib{taca}
 
-exe{music.wasm}: {hxx ixx txx cxx}{**} $libs testscript
+./ : file{music.taca}
 
-cxx.poptions =+ "-I$out_root" "-I$src_root"
+# TODO: factorize these
+c{shader..frag} : file{shader..frag.glsl}
+{{
+	diag naga $>
+	name = $name($<)
+	spv_path = $path.canonicalize("$out_base/$name".spv)
+	echo "input: $target.path($<)"
+	echo "naga output: $spv_path"
+	echo "xxd output: $target.path($>)"
+	naga $target.path($<) $spv_path
+	xxd -i -n out_shader_frag_spv  $spv_path > $target.path($>)
+}}
+
+c{shader..vert} : file{shader..vert.glsl}
+{{
+	diag naga $>
+	name = $name($<)
+	spv_path = $path.canonicalize("$out_base/$name".spv)
+	echo "input: $target.path($<)"
+	echo "naga output: $spv_path"
+	echo "xxd output: $target.path($>)"
+	naga $target.path($<) $spv_path
+	xxd -i -n out_shader_vert_spv $spv_path > $target.path($>)
+}}
+
+c{musicbox-data} : file{musicbox.ogg}
+{{
+	diag xxd $>
+	xxd -i -n src_musicbox_ogg $target.path($<)  > $target.path($>)
+}}
+
+exe{music.wasm}: {hxx ixx txx cxx c h}{** -shader..frag -shader..vert -musicbox-data} c{shader..frag} c{shader..vert} c{musicbox-data} $libs testscript
+
+
+file{music.taca}: exe{music.wasm}
+{{
+	diag music.taca $>
+	lz4 -f9 $< $>
+}}
+
+
+
+cxx.poptions =+ "-I$out_root" "-I$src_root" "-I$out_base"

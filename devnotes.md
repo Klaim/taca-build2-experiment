@@ -6,4 +6,6 @@
 - using iostream will result in runtime errors (taca-specific?)
 - using `#include <print>` will result in link-time errors (wasi-specific?)
 - need to find an easier way to generate the `taca` file than relying on environment providing `lz4`
+- build2 doesnt use `.wasm` automatically for the build outputs
+- find a way to generalize glsl file -> spirv -> C
 -
