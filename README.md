@@ -7,7 +7,11 @@ appropriate for development rather than consumption. If you want to use
 `taca-build2-experiments` in your `build2`-based project, then instead see the accompanying
 package [`README.md`](<PACKAGE>/README.md) file.
 
-The development setup for `taca-build2-experiments` uses the standard `bdep`-based workflow.
+
+Requirements:
+ - WASI SDK (provides the toolchain)
+ - `lz4` (to create `.taca` files)
+
 For example:
 
 ```
