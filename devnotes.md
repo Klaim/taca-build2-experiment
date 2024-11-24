@@ -22,3 +22,5 @@
       info: while updating (for install) dir{.\}
     info: failed to update (for install) dir{.\}
 
+- `import std;` faills at link because exception handling seems to be a requirement
+-
