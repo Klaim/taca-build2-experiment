@@ -7,3 +7,5 @@
 # Compilation database.
 #
 compile_commands.json
+
+/builds/
