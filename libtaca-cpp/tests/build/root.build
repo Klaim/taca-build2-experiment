@@ -1,4 +1,6 @@
 cxx.std = 26
+cxx.features.modules = true
+cxx.features.symexport = true
 
 using cxx
 
@@ -6,6 +8,7 @@ hxx{*}: extension = hpp
 ixx{*}: extension = ipp
 txx{*}: extension = tpp
 cxx{*}: extension = cpp
+mxx{*}: extension = mpp
 
 # Every exe{} in this subproject is by default a test.
 #

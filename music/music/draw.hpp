@@ -3,7 +3,8 @@
 #include "app.hpp"
 #include "markers.hpp"
 #include <array>
-#include <taca/taca.hpp>
+#include <span>
+import taca;
 
 namespace music {
 

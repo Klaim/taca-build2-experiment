@@ -1,10 +1,12 @@
-#pragma once
+module;
 
 #include <array>
 #include <cmath>
 #include <concepts>
 
-namespace vec {
+export module taca.vec;
+
+export namespace vec {
 
 template <typename R, typename T, std::size_t dim, typename F>
     requires std::invocable<F, const T&> &&

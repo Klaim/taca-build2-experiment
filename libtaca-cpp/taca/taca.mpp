@@ -1,12 +1,23 @@
-#pragma once
-
-#include "taca.h"
+module;
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
 #include <array>
 #include <cstdint>
 #include <span>
 #include <string_view>
 
-namespace taca {
+export module taca;
+
+export import :version;
+export import taca.vec;
+
+export {
+#include "taca.h"
+}
+
+
+export namespace taca {
 
 // Enums, redone as enum struct
 

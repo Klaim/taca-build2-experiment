@@ -5,6 +5,9 @@
 cxx.std = 26
 c.std = 23
 
+cxx.features.modules = true
+cxx.features.symexport = true
+
 using cxx
 using c
 
@@ -12,6 +15,7 @@ hxx{*}: extension = hpp
 ixx{*}: extension = ipp
 txx{*}: extension = tpp
 cxx{*}: extension = cpp
+mxx{*}: extension = mpp
 
 # The test target for cross-testing (running tests under Wine, etc).
 #

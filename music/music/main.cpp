@@ -4,7 +4,7 @@
 #include "resources.hpp"
 #include "songs.hpp"
 // #include <stdfloat> // apparently not available yet
-#include <taca/taca.hpp>
+import taca;
 
 namespace music {
 

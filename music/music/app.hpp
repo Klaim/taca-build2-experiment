@@ -1,9 +1,9 @@
 #pragma once
 
+import taca;
+
 #include <cstdio>
 #include <optional>
-#include <taca/taca.hpp>
-#include <taca/vec.hpp>
 #include <vector>
 
 namespace music {

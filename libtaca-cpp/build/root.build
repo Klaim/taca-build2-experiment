@@ -3,6 +3,8 @@
 #cxx.internal.scope = current
 
 cxx.std = 26
+cxx.features.modules = true
+cxx.features.symexport = true
 
 using cxx
 using c
@@ -11,6 +13,7 @@ hxx{*}: extension = hpp
 ixx{*}: extension = ipp
 txx{*}: extension = tpp
 cxx{*}: extension = cpp
+mxx{*}: extension = mpp
 
 # The test target for cross-testing (running tests under Wine, etc).
 #

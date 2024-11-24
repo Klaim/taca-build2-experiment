@@ -1,8 +1,7 @@
 #pragma once
 
 #include "app.hpp"
-#include <taca/taca.hpp>
-#include <taca/vec.hpp>
+import taca;
 
 namespace music {
 

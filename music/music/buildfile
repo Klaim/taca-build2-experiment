@@ -34,7 +34,7 @@ c{musicbox-data} : file{musicbox.ogg}
 	xxd -i -n src_musicbox_ogg $target.path($<)  > $target.path($>)
 }}
 
-exe{music.wasm}: {hxx ixx txx cxx c h}{** -shader..frag -shader..vert -musicbox-data} c{shader..frag} c{shader..vert} c{musicbox-data} $libs testscript
+exe{music.wasm}: {hxx ixx txx cxx c h}{** -shader..frag -shader..vert -musicbox-data} c{shader..frag} c{shader..vert} c{musicbox-data} $libs
 
 
 file{music.taca}: exe{music.wasm}

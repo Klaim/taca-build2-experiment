@@ -1,8 +1,7 @@
-#include <taca/version.hpp>
-#include <taca/taca.hpp>
+import taca;
 
 
 int main ()
 {
-
+    // TODO: print the version, then quit
 }
