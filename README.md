@@ -14,7 +14,8 @@ For example:
 git clone .../taca-build2-experiments.git
 cd taca-build2-experiments
 
-bdep init -C builds/wasi @wasi cc "config.cxx='<path to WASI SDK>\bin\clang++'"
+PATH="$PATH/<path to taca build dir>"
+bdep init -C builds/wasi @wasi cc "config.cxx='<path to WASI SDK>/bin/clang++'" config. config.config.options=./build2-configs/wasi.config
 bdep update
 bdep test
 ```

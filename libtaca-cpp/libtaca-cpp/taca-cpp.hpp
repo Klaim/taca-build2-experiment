@@ -15,7 +15,10 @@ namespace taca_cpp
     using namespace std;
 
     if (name.empty ())
-      throw invalid_argument ("empty name");
+    {
+      o <<"ERROR: name must be provided" << endl;
+      return;
+    }
 
     o << "Hello, " << name << '!' << endl;
   }
