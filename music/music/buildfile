@@ -40,7 +40,9 @@ exe{music.wasm}: {hxx ixx txx cxx c h}{** -shader..frag -shader..vert -musicbox-
 file{music.taca}: exe{music.wasm}
 {{
 	diag music.taca $>
-	lz4 -f9 $< $>
+	lz4 -f9 $target.path($<) $target.path($>)
+	# `touch` here is to prevent "error: backwards modification times detected"
+	touch $target.path($>)
 }}
 
 
