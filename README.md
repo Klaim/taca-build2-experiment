@@ -25,6 +25,7 @@ cd taca-build2-experiments
 
 PATH="$PATH/<path to taca build dir>"
 bdep init -C builds/wasi @wasi cc "config.cxx='<path to WASI SDK>/bin/clang++'" config.config.load=./build2-configs/wasi.config
-bdep update
-bdep test
+bdep update # or `b` or `b update: music/`
+bdep test # or `b test` or `b test: music/`
 ```
+
