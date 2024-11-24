@@ -48,3 +48,5 @@ file{music.taca}: exe{music.wasm}
 
 
 cxx.poptions =+ "-I$out_root" "-I$src_root" "-I$out_base"
+
+file{music.taca}: install = bin/
