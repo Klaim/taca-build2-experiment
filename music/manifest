@@ -1,0 +1,14 @@
+: 1
+name: music
+version: 0.1.0-a.0.z
+language: c++
+project: taca-build2-experiments
+summary: music C++ executable
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/taca-build2-experiments
+email: 142265+Klaim@users.noreply.github.com
+#build-error-email: 142265+Klaim@users.noreply.github.com
+depends: * build2 >= 0.16.0
+depends: * bpkg >= 0.16.0
+#depends: libhello ^1.0.0

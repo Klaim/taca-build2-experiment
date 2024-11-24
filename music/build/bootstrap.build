@@ -1,0 +1,7 @@
+project = music
+
+using version
+using config
+using test
+using install
+using dist
