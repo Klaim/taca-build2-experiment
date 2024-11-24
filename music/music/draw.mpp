@@ -1,12 +1,16 @@
-#pragma once
+module;
 
-#include "app.hpp"
-#include "markers.hpp"
 #include <array>
 #include <span>
-import taca;
+#include <vector>
 
-namespace music {
+export module taca.examples.music:draw;
+
+import taca;
+import :app;
+import :markers;
+
+export namespace music {
 
 constexpr auto background_light = 0.8f;
 constexpr auto band_light = 0.9f;

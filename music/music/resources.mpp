@@ -1,9 +1,11 @@
-#pragma once
+module;
 
 #include <cstdint>
 #include <span>
 
-namespace music {
+export module taca.examples.music:resources;
+
+export namespace music {
 
 // Inside the namespace on purpose.
 #include "musicbox-data.c"

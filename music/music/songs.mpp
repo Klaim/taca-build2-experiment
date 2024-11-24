@@ -1,8 +1,10 @@
-#pragma once
 
-#include "app.hpp"
 
-namespace music::songs {
+export module taca.examples.music:songs;
+import :app;
+import taca;
+
+export namespace music::songs {
 
 auto basic() -> Song {
     return {

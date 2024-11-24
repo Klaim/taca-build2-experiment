@@ -1,10 +1,13 @@
-#include "app.hpp"
-#include "control.hpp"
-#include "draw.hpp"
-#include "resources.hpp"
-#include "songs.hpp"
 // #include <stdfloat> // apparently not available yet
+
+#include <array>
+#include <span>
+#include <vector>
+#include <algorithm>
+
 import taca;
+import taca.examples.music;
+
 
 namespace music {
 

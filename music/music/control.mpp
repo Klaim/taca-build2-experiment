@@ -1,9 +1,12 @@
-#pragma once
+module;
+#include <utility>
+#include <algorithm>
 
-#include "app.hpp"
+export module taca.examples.music:control;
+import :app;
 import taca;
 
-namespace music {
+export namespace music {
 
 auto play_ding(const App& app, float semitones) -> void {
     taca::sound_play({

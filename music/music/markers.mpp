@@ -1,9 +1,12 @@
-#pragma once
+module;
 
-#include "app.hpp"
 #include <array>
 
-namespace music::markers {
+export module taca.examples.music:markers;
+
+import :app;
+
+export namespace music::markers {
 
 constexpr auto note1 = std::to_array<DrawInstance>({
     {},

@@ -1,12 +1,14 @@
-#pragma once
-
-import taca;
+module;
 
 #include <cstdio>
 #include <optional>
 #include <vector>
 
-namespace music {
+export module taca.examples.music:app;
+
+import taca;
+
+export namespace music {
 
 // Which means 12 ticks/second or 720 ticks/minute.
 // If each is a 16th note, and a a quarter note is one beat, that's tempo 180.

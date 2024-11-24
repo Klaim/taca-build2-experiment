@@ -1,0 +1,17 @@
+module;
+
+#include <cstdio>
+#include <optional>
+#include <vector>
+
+export module taca.examples.music;
+
+export import :app;
+export import :control;
+export import :draw;
+export import :markers;
+export import :resources;
+export import :songs;
+
+
+export import taca;
