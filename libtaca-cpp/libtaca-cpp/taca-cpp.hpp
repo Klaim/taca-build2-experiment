@@ -1,15 +1,22 @@
 #pragma once
 
-#include <iosfwd>
 #include <string>
-
-#include <libtaca-cpp/export.hpp>
+#include <ostream>
+#include <stdexcept>
 
 namespace taca_cpp
 {
   // Print a greeting for the specified name into the specified
   // stream. Throw std::invalid_argument if the name is empty.
   //
-  LIBTACA_CPP_SYMEXPORT void
-  say_hello (std::ostream&, const std::string& name);
+  inline void
+  say_hello (std::ostream& o, const std::string& name)
+  {
+    using namespace std;
+
+    if (name.empty ())
+      throw invalid_argument ("empty name");
+
+    o << "Hello, " << name << '!' << endl;
+  }
 }

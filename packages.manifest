@@ -1,5 +1,6 @@
 : 1
-location: libtaca-cpp/
+
+location: music/
 
 :
-location: music/
+location: libtaca-cpp/

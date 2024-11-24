@@ -1,6 +1,7 @@
 : 1
 name: libtaca-cpp
 version: 0.1.0-a.0.z
+type: lib,binless
 language: c++
 project: taca-build2-experiments
 summary: taca-cpp C++ library
