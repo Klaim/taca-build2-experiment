@@ -23,4 +23,8 @@
     info: failed to update (for install) dir{.\}
 
 - `import std;` faills at link because exception handling seems to be a requirement
--
+
+TODO:
+- request build2's support of wasi-sdk
+- figure out how to make `import std;` work (with or without exceptions - are they really required with wasm or is there a way to support them?)
+- move `taca.vec` as it's own package/project
