@@ -28,3 +28,7 @@ TODO:
 - request build2's support of wasi-sdk
 - figure out how to make `import std;` work (with or without exceptions - are they really required with wasm or is there a way to support them?)
 - move `taca.vec` as it's own package/project
+- factorize the shader compilation and taca file generations
+  - see if that can be provided to any taca user project
+- try to make a separate taca app, see how it goes
+-
