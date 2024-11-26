@@ -1,7 +1,7 @@
 # taca-build2-experiments - <SUMMARY>
 
 This is an attempt to
-- build a C++ taca example from https://github.com/contextfreeinfo/taca/ using `build2`
+- build a C++ `taca` example from https://github.com/contextfreeinfo/taca/ using `build2`
 - then convert the C++ code to use C++ modules
 
 **THIS IS AN EXPERIMENT, IN NO WAY IT IS DESIGNED FOR ANY KIND OF OTHER USAGE**
@@ -23,7 +23,7 @@ For example:
 git clone .../taca-build2-experiments.git
 cd taca-build2-experiments
 
-PATH="$PATH/<path to taca build dir>"
+PATH="$PATH:<path to taca build dir>"
 bdep init -C builds/wasi @wasi cc "config.cxx='<path to WASI SDK>/bin/clang++'" config.config.load=./build2-configs/wasi.config
 bdep update # or `b` or `b update: music/`
 bdep test # or `b test` or `b test: music/`
